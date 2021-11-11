@@ -1,4 +1,5 @@
 # e-commerce
+
 e-commerce site run by MERN stack
 
 ### Env Variables
@@ -12,12 +13,13 @@ MONGO_URI = your mongodb uri
 JWT_SECRET = your JWT secret
 MAILGUN_KEY = your mailgun key
 MAILGUN_DOMAIN = your mailgun domain
-MAILGUN_EMAIL_SENDER = andrew1w2e@gmail.com(your mailgun sender)
+MAILGUN_EMAIL_SENDER = your mailgun sender
 GOOGLE_CLIENT_ID=your google client id
 GOOGLE_CLIENT_SECRET=your google client secret
 GOOGLE_CALLBACK_URL=your google callback url
 BASE_SERVER_URL=your base server url
 ```
+
 ### Install Dependencies (frontend & backend)
 
 ```
@@ -40,12 +42,16 @@ npm run client
 ```
 
 ### Seed Database
+
 ```
 You can use the following commands to seed the database with some sample users and products as well as destroy all data
 
 ```
+
 # Import data
+
 npm run data:import
 
 # Destroy data
+
 npm run data:destroy
