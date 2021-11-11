@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/services/*": ["src/app/services"]
+    }
+  },
+  "include": ["src"]
+}

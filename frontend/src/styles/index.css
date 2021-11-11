@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../assets/fonts/HelveticaNeueCyr-Medium.otf');
+}
+/* End Fonts */
+
+body {
+  margin: 0;
+  font-family: 'HelveticaNeueCyr';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #111111;
+}
+.sh-btn {
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  border: 1px solid #000000 !important;
+  min-width: 284px !important;
+}
+.sh-btn.btn-transparent {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* CountDown */
+.sh-countdown-timer {
+  position: relative;
+}
+.sh-countdown-timer .time-counting {
+  display: flex;
+  justify-content: center;
+}
+.sh-countdown-timer .time-counting > span {
+  display: block;
+  margin: 10px 20px;
+  position: relative;
+  font-size: 50px;
+}
+.sh-countdown-timer .time-counting > span::before {
+  content: ':';
+  position: absolute;
+  top: -1px;
+  right: -20px;
+}
+.sh-countdown-timer .time-counting > span:last-child::before {
+  display: none;
+}
+
+.sh-countdown-timer .time-label {
+  display: flex;
+  justify-content: center;
+}
+.sh-countdown-timer .time-label > span {
+  display: block;
+  margin: 10px 20px;
+  position: relative;
+  font-size: 10px;
+}
